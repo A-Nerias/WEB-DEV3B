@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE LAYOUT STRUCTURE</title>
+    <link rel="stylesheet" href="../css/customstyle.css">
+    
+</head>
+<body>
+    <!--STARTING TAG HEADER-->
+    <header>
+    <div>
+        <h1>THE LAZY GENIUS WAY</h1>
+        <h3>READ TO EXPLORE, LEARN, AND GROW</h3>
+    <div>
+     <div class="container">
+        <a href="../index.html">Home</a> |
+        <a href="../pages/about.html">About</a> |
+        <a href="../pages/contactus.html">Contact Us</a> |
+       
+        <button id="submit_btn"><a href="../pages/login.html">Login</a></button>
+    </div>
+</header>
+<!--END TAG HEADER-->
+
+<!--STARTING TAG HEADER-->
+   <section>
+    <nav>
+        <ul>
+            <li>
+                <a href="../page2/Headings.html">Heading</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="../page2/Images.html">Images</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="../page2/table.html">Tables</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="../page2/Forms.html">Forms</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="../page2/List.html">HTML List</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="../page2/Form Post Method.html">Form Post Method</a>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <h2>Form Method Post Action</h2>
+        <?php
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+                $fullname = htmlspecialchars($_POST['name']);
+                $yourage = htmlspecialchars($_POST['age']);
+
+                echo "<h2> Your name is : ".$fullname. "</h2>";
+                echo "<h2> Your age is : ".$yourage. "</h2>";
+            }
+        
+        ?>
+    </article>
+   </section> 
+   <!--END TAG HEADER-->
+
+    <!--STARTING TAG FOOTER-->
+    <footer>
+        <h2>THELAZYGENIUSWAY</h2>
+        <div>
+            <a href="../index.html">Home</a> |
+            <a href="../pages/about.html">About</a> |
+            <a href="../pages/Contact Us.html">Contact Us</a> |
+            <a href="../pages/Inquiry.html">Inquiry</a> |
+            <a href="../pages/Log in.html">Log in</a> |
+        </div>
+        <div>
+            <p>
+                Copyrights &copy; THELAZYGENIUSWAY (PHILIPPINES)
+                PRIVATE LIMITED. All rights reserved.
+            </p>
+        </div>
+     </footer>
+     <!--END TAG FOOTER-->
+
+     
+</body>
+</html>

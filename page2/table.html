@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE LAYOUT STRUCTURE</title>
+    <link rel="stylesheet" href="../css/table.css">
+    
+</head>
+<body>
+    <!--STARTING TAG HEADER-->
+    <header>
+    <div>
+        <h1>BOOKS STORE</h1>
+        <h3>GREENY AND HEALTHY LIFESTYLE</h3>
+    <div>
+     <div class="container">
+        <a href="../index.html">Home</a> |
+        <a href="../pages/about.html">About</a> |
+        <a href="../pages/Contact Us.html">Contact Us</a> |
+        <a href="../pages/Inquiry.html">Inquiry</a>
+        <a href="../pages/Log in.html">Log in</a>
+        <a href="../pages/Profile.html">Profile</a>
+
+        <button id="submit_btn"><a href="../pages/login.html">Login</a></button>
+    </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../page2/Forms.html">Forms</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../page2/Headings.html">Heading</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../page2/Images.html">Images </a>
+
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../page2/table.html">Table </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../page2/List.html">HTML List</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <article>
+            <h1> Table Format HTML </h1>
+            <p align="justify">This is the Sample Table Content</p>
+
+            <!--TABLE START-->
+             <table border="1" class="table_data">
+                <colgroup>
+                    <col style="width: 40%;">
+                    <col style="width: 30%;">
+                    <col style="width: 30%;">
+                </colgroup>
+                <tr>
+                   <th>Product</th>
+                   <th>Category</th>
+                   <th>Price</th>
+                </tr>
+                <tr>
+                    <td>To Kill a Mockingbird </td>
+                    <td>Fictions</td>
+                    <td>$12.99</td>
+                </tr>
+                <tr>
+                    <td>The Great Gatsby</td>
+                    <td>Classics</td>
+                    <td>$9.99</td>
+                </tr>
+                <tr>
+                    <td>1984</td>
+                    <td>Dystopian</td>
+                    <td>$20.8</td>
+                </tr>
+                <tr>
+                    <td>Pride and Prejudice</td>
+                    <td>Romance</td>
+                    <td>$18.9</td>
+                </tr>
+                <tr>
+                    <td>The Catcher in the Rye</td>
+                    <td>Coming of Age</td>
+                    <td>$25.5</td>
+                </tr>
+             </table>
+            <!--TABLE END-->
+
+            <!--TABLE WITH THEAD TBODY AND TFOOT-->
+            <p>THIS IS FOR THE TABLE STRUCTURE WITH THEAD, TBODY AND TFOOT</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">ALLYZA NERIAS</td> 
+                        <td>20</td>
+                        <td>BSIS3-B</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>BSIS3-B</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>BSIS3-B</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><small><b>Information</b></small></td>
+                        <td><small>Info</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+
+            <!--NESTED TABLES-->
+            <h3><b>NESTED TABLES</b></h3>
+            <table border="1">
+                <figcaption><b>Table 1.</b>This is the Sample Data of a Table</figcaption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Content of a Table</th>
+                    </tr>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Great Gatsby
+                            <table border="1">
+                                <tr>
+                                    <th>Size</th>
+                                    <th>Pages</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>5 x 8 inches</td>
+                                        <td>287</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 x 8 inches</td>
+                                        <td>500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>5</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>The Road</td>
+                        <td>5 x 8 inches</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Brave New World</td>
+                        <td>5 x 7.75 inches</td>
+                        <td>$100</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </article>
+    </section> 
+    <!--END TAG HEADER-->
+ 
+     <!--STARTING TAG FOOTER-->
+     <footer>
+         <h2>THE LAZY GENIUS WAY</h2>
+         <div>
+            <a href="../index.html">Home</a> |
+            <a href="../pages/about.html">About</a> |
+            <a href="../pages/Contact Us.html">Contact Us</a> |
+            <a href="../pages/Inquiry.html">Inquiry</a> |
+            <a href="../pages/Log in.html">Log in</a> |
+            <a href="../pages/Profile.html">Profile</a> |
+         <div>
+             <p>
+                 Copyrights &copy; THE LAZY GENIUS WAY (PHILIPPINES)
+                 PRIVATE LIMITED. All rights reserved.
+             </p>
+         </div>
+      </footer>
+      <!--END TAG FOOTER-->
+ 
+      
+ </body>
+ </html>
